@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgapp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.50"
+                    app:srcCompat="@drawable/logopostobon"
+                    android:id="@+id/register_logopos" />
+
+                <TextView
+                    android:text="@string/loggin_header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personal_info_textView"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    style="@style/TextViewParagraphWhite"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/e_mail"
+                    android:ems="10"
+                    android:id="@+id/e_mail_editText"
+                    style="@style/EditText" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/pass"
+                    android:ems="10"
+                    android:id="@+id/pass_editText"
+                    style="@style/EditText"/>
+
+                <TextView
+                    android:text="@string/password_forgotten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password_forgotten"
+                    android:textColor="@color/colorBlueButton"
+                    android:gravity="center_horizontal"
+                    android:clickable="true"
+                    android:layout_gravity="center_horizontal"
+                    style="@style/TextViewParagraphWhite"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:text="@string/loggin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_loggin"
+                android:layout_marginTop="20dp"
+                style="@style/GenericButton" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

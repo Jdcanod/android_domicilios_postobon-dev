@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgapp"
+    tools:context="com.postobonapp.Activities.CityActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logopostobon"
+            android:id="@+id/initlogopos"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="@string/ubication_init"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ubication_init_textView"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextViewH1White"/>
+
+        <TextView
+            android:text="@string/city_selection_description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sincontenido"
+            android:gravity="center_horizontal"
+            style="@style/TextViewParagraphWhite" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:weightSum="1">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rb_city_selection" >
+
+                <RadioButton
+                    android:text="@string/armenia_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/armenia_Button"
+                    style="@style/RadioButton"/>
+
+                <RadioButton
+                    android:text="@string/bogota_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bogota_Button"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:text="@string/cali_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cali_Button"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:text="@string/medellin_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medellin_Button"
+                    android:checked="true"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:text="@string/otra_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otra_Button"
+                    style="@style/RadioButton" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:text="@string/add_personal_inf"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_add_personal_inf"
+            style="@style/GenericButton"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

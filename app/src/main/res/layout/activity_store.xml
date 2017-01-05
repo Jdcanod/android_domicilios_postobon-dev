@@ -1,0 +1,286 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ib_product_3">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_above="@+id/ly_content_login_register"
+                android:layout_alignParentTop="true" />
+
+            <RadioGroup
+                android:id="@+id/product_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ly_content_login_register"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/product_radioButton"
+                    android:layout_width="@dimen/padding_page_indicator_padding"
+                    android:layout_height="@dimen/padding_page_indicator_padding"
+                    android:button="@drawable/select_pager_indicator"
+                    android:checked="true"
+                    android:clickable="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/product_radioButton2"
+                    android:layout_width="@dimen/padding_page_indicator_padding"
+                    android:layout_height="@dimen/padding_page_indicator_padding"
+                    android:button="@drawable/select_pager_indicator"
+                    android:clickable="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/product_radioButton3"
+                    android:layout_width="@dimen/padding_page_indicator_padding"
+                    android:layout_height="@dimen/padding_page_indicator_padding"
+                    android:button="@drawable/select_pager_indicator"
+                    android:clickable="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/product_radioButton4"
+                    android:layout_width="@dimen/padding_page_indicator_padding"
+                    android:layout_height="@dimen/padding_page_indicator_padding"
+                    android:button="@drawable/select_pager_indicator"
+                    android:clickable="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/product_radioButton5"
+                    android:layout_width="@dimen/padding_page_indicator_padding"
+                    android:layout_height="@dimen/padding_page_indicator_padding"
+                    android:button="@drawable/select_pager_indicator"
+                    android:clickable="false" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@color/colorGreyBG"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/ly_content_product">
+
+
+
+                <TextView
+                    android:text="@string/manzana_postobon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlueButton"
+                    android:textSize="25dp"
+                    android:textAlignment="center"
+                    android:id="@+id/tv_product_name"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_no_disponible_"
+                        android:id="@+id/ib_product_1"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_select_"
+                        android:id="@+id/ib_product_2"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_no_select_"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_select_"
+                        android:id="@+id/ib_product_4"
+                        android:layout_weight="1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/boton_no_select_"
+                        android:id="@+id/ib_product_5"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="139dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+
+                        android:background="@drawable/border_basic_shape"
+                        android:foregroundGravity="center_vertical">
+
+
+                        <TextView
+                            android:text=" -  "
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="60dp"
+                            android:textColor="@color/colorWhite"
+                            android:id="@+id/tvMenos"
+                            android:layout_weight="3"
+                            android:background="@drawable/border_up_down"
+                            />
+
+                    <TextView
+                        android:text="5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="40dp"
+                        android:textColor="@color/colorBlueButton"
+                        android:id="@+id/textView4"
+                        android:textAlignment="gravity"
+                        android:background="@drawable/border_basic_shape"
+                        android:layout_weight="2"
+
+                         />
+
+                        <TextView
+                            android:text=" + "
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="40dp"
+                            android:textColor="@color/colorWhite"
+                            android:id="@+id/tvMas"
+                            android:background="@drawable/border_up_down"
+                            android:layout_weight="3"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="@string/unidades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView5"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="25dp"
+                        android:layout_margin="12dp"
+                        android:textColor="@color/colorBlack"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="320dp"
+                    android:layout_height="53dp"
+                    android:layout_margin="25dp"
+                    android:background="@color/colorMenu"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@color/colorBlueButton"
+                        >
+
+
+                        <TextView
+                            android:text="@string/value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView8"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorWhite"/>
+
+                        <TextView
+                            android:text="$4000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView7"
+                            android:layout_weight="1"
+                            android:textSize="20dp"
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorWhite"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="@string/add_to_shipping"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView6"
+                        android:layout_weight="1.03"
+                        android:textSize="20dp"
+                        android:layout_margin="12dp"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="@string/dummy_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

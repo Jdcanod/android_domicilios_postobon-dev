@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@drawable/user"
+            android:title="@string/my_profile" />
+
+        <item android:id="@+id/personal_info_textView"
+              android:title="@string/personal_info" />
+
+        <item android:id="@+id/adrress_delivery_textView"
+              android:title="@string/address_delivery"
+              />
+
+        <item android:id="@+id/favorite_products_textView"
+              android:title="@string/favorite_products" />
+
+        <item android:id="@+id/orders_hostory_textView"
+              android:icon="@drawable/mas"
+              android:title="@string/orders_history" />
+
+        <item android:id="@+id/know_our_products_textView"
+            android:title="@string/know_our_products" />
+
+        <item android:id="@+id/sodas_textView"
+            android:title="@string/sodas"
+            />
+
+        <item android:id="@+id/fruits_textView"
+            android:title="@string/fruits" />
+
+        <item android:id="@+id/water_textView"
+            android:title="@string/water" />
+
+
+        <item android:id="@+id/taes_textView"
+            android:title="@string/taes" />
+
+        <item android:id="@+id/moisturizers_textView"
+            android:title="@string/moisturizers" />
+
+        <item android:id="@+id/energizing_textView"
+            android:title="@string/energizing" />
+
+        <item android:id="@+id/about_app_textView"
+            android:icon="@drawable/information"
+            android:title="@string/about_app" />
+
+
+    </group>
+
+
+</menu>

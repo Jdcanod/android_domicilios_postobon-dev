@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgapp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/logopostobon"
+            android:id="@+id/register_logopos"
+            android:layout_weight="1.50" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:text="@string/personal_inf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/personal_info_textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.18"
+            style="@style/TextViewParagraphWhite"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="341dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:weightSum="1">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/names"
+                android:ems="10"
+                android:id="@+id/names_editText"
+                style="@style/EditText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/last_name"
+                android:ems="10"
+                android:id="@+id/last_name_editText"
+                style="@style/EditText"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/e_mail"
+                android:ems="10"
+                android:id="@+id/e_mail_editText"
+                style="@style/EditText" />
+
+            <TextView
+                android:text="@string/create_pass_access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/create_pass_textView"
+                android:gravity="center_horizontal"
+                style="@style/TextViewParagraphWhite"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/pass"
+                android:ems="10"
+                android:id="@+id/pass_editText"
+                style="@style/EditText"/>
+
+            <CheckBox
+                android:text="@string/i_agree_term_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:id="@+id/rb_accept_term_condition" />
+        </LinearLayout>
+
+
+        <Button
+            android:text="@string/add_shipping_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_add_shipping_address"
+            style="@style/GenericButton" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

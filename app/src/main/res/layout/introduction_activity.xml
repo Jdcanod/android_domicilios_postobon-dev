@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewPager_introduction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ly_content_login_register"
+        android:layout_alignParentTop="true" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ly_content_login_register"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="@dimen/padding_page_indicator_padding"
+            android:layout_height="@dimen/padding_page_indicator_padding"
+            android:button="@drawable/select_pager_indicator"
+            android:checked="true"
+            android:clickable="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="@dimen/padding_page_indicator_padding"
+            android:layout_height="@dimen/padding_page_indicator_padding"
+            android:button="@drawable/select_pager_indicator"
+            android:clickable="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="@dimen/padding_page_indicator_padding"
+            android:layout_height="@dimen/padding_page_indicator_padding"
+            android:button="@drawable/select_pager_indicator"
+            android:clickable="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="@dimen/padding_page_indicator_padding"
+            android:layout_height="@dimen/padding_page_indicator_padding"
+            android:button="@drawable/select_pager_indicator"
+            android:clickable="false"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="@dimen/padding_page_indicator_padding"
+            android:layout_height="@dimen/padding_page_indicator_padding"
+            android:button="@drawable/select_pager_indicator"
+            android:clickable="false" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ly_content_login_register">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/GenericButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/effect_select_button_white_blue"
+                android:onClick="onClickButton"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/btn_new_account"
+                style="@style/GenericButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/effect_select_button_white_blue"
+                android:onClick="onClickButton"
+                android:text="@string/btn_create_acount"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_unregister_session"
+            style="@style/GenericButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/effect_select_button_white_blue"
+            android:onClick="onClickButton"
+            android:text="@string/btn_unregister_session"
+            android:textColor="@color/colorWhite"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

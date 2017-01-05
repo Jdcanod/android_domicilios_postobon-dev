@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="50dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_order">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/ly_indicators_order"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paso_1_act__"
+                android:id="@+id/iv_indicator_order_1"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paso_2_gray_"
+                android:id="@+id/iv_indicator_order_2"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paso_3_gray_"
+                android:id="@+id/iv_indicator_order_3"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_gray_"
+                android:id="@+id/iv_indicator_check"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/shipping_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="27dp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorMenu"
+            android:id="@+id/tv_shipping_address" />
+
+        <LinearLayout
+            android:id="@+id/ly_order_1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
+
+            <TextView
+                android:text="@string/dummy_text_shipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tV_dummy_text_shipping" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:inputType="textPersonName"
+                android:text="@string/address"
+                android:background="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:id="@+id/eT_order_address"
+                android:layout_weight="0.30" />
+
+
+            <TextView
+                android:text="@string/when_you_wt_receive_your_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21dp"
+                android:textAlignment="center"
+                android:layout_marginTop="70dp"
+                android:textColor="@color/colorMenu"
+                android:id="@+id/tV_when_you_wt_receive_your_order" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:text="@string/next_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_next_thursday"
+                    android:layout_weight="1"
+                    style="@style/RadioButton2"/>
+
+                <RadioButton
+                    android:text="@string/tomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb_tomorrow"
+                    android:layout_weight="1"
+                    style="@style/RadioButton2"/>
+
+
+            </RadioGroup>
+
+            <Button
+                android:text="@string/select_pay_mode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_select_pay_mode"
+                android:background="@color/colorMenu"
+                android:textColor="@color/colorWhite"
+                style="@style/OrderButton"
+                android:layout_marginTop="40dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

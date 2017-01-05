@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="50dp">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ly_order_check">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ly_order_check_1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:text="@string/confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tV_confirmation_shipping" />
+
+            <TextView
+                android:text="@string/dummy_confirmation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/tV_dummy_confirmation" />
+
+
+
+
+            <Button
+                android:text="@string/come_back_ppal_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_come_back_ppal_page"
+                android:background="@color/colorMenu"
+                android:textColor="@color/colorWhite"
+                style="@style/OrderButton"
+                android:layout_marginTop="90dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
